@@ -1,6 +1,9 @@
+<script setup lang="ts">
+await navigateTo('/home')
+</script>
+
 <template>
   <div>
-    <Logos mb-6 />
     <Suspense>
       <PageView />
       <template #fallback>
@@ -9,6 +12,5 @@
         </div>
       </template>
     </Suspense>
-    <InputEntry />
   </div>
 </template>
